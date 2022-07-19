@@ -9,8 +9,8 @@ public class SportCar extends Car {
 
     public SportCar(){}
 
-    public SportCar( String CarBrand, String CarType, int Weight, Driver Driver, Engine Engine,String maxSpead){
-        super(CarBrand,CarType,Weight,Driver,Engine);
+    public SportCar( String carBrand, String carType, int weight, Driver driver, Engine engine,String maxSpead){
+        super(carBrand,carType,weight,driver,engine);
         this.maxSpead= maxSpead;
     }
 
@@ -18,11 +18,11 @@ public class SportCar extends Car {
     public String toString() {
         return "SportCar{" +
                 "maxSpead='" + maxSpead + '\'' +
-                ", Weight=" + Weight +
-                ", CarBrand='" + CarBrand + '\'' +
-                ", CarType='" + CarType + '\''+
-                ",\n Driver=" + Driver +
-                ",\n Engine=" + Engine +
+                ", Weight=" + weight +
+                ", CarBrand='" + carBrand + '\'' +
+                ", CarType='" + carType + '\''+
+                ",\n Driver=" + driver +
+                ",\n Engine=" + engine +
                 '}';
     }
 }

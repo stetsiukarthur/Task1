@@ -5,18 +5,18 @@ import com.company.details.Engine;
 
     public class Car {
 
-        public int Weight;
-        public String CarBrand, CarType;
-        public Driver Driver;
-        public Engine Engine;
+        public int weight;
+        public String carBrand, carType;
+        public Driver driver;
+        public Engine engine;
 
         public Car(){}
-        public Car(String CarBrand, String CarType, int Weight, Driver Driver, Engine Engine){
-            this.Engine = Engine;
-            this.CarBrand = CarBrand;
-            this.Weight = Weight;
-            this.CarType = CarType;
-            this.Driver = Driver;
+        public Car(String carBrand, String carType, int weight, Driver driver, Engine engine){
+            this.engine = engine;
+            this.carBrand = carBrand;
+            this.weight = weight;
+            this.carType = carType;
+            this.driver = driver;
         }
 
         public  void start(){
@@ -44,11 +44,11 @@ import com.company.details.Engine;
         @Override
         public String toString() {
             return "Car{" +
-                    "Weight=" + Weight +
-                    ", CarBrand='" + CarBrand + '\'' +
-                    ", CarType='" + CarType + '\'' +
-                    ",\n Driver=" + Driver +
-                    ",\n Engine=" + Engine +
+                    "Weight=" + weight +
+                    ", CarBrand='" + carBrand + '\'' +
+                    ", CarType='" + carType + '\'' +
+                    ",\n Driver=" + driver +
+                    ",\n Engine=" + engine +
                     '}';
         }
     }

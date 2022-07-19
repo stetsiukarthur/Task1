@@ -2,11 +2,11 @@ package Task1;
 
 public class NokiaPhone extends Phone implements PhoneConnection {
     @Override
-    public void Call(){
+    public void call(){
         System.out.println("Call from Nokia");
     }
     @Override
-    public void SendMassage(){
+    public void sendMassage(){
         System.out.println("Send massage from Nokia");
     }
     public NokiaPhone(){super();}

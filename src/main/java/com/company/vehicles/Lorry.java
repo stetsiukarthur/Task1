@@ -18,11 +18,11 @@ public class Lorry extends Car {
     public String toString() {
         return "Lorry{" +
                 "maxWeight=" + maxWeight +
-                ", Weight=" + Weight +
-                ", CarBrand='" + CarBrand + '\'' +
-                ", CarType='" + CarType + '\'' +
-                ",\n Driver=" + Driver +
-                ",\n Engine=" + Engine +
+                ", Weight=" + weight +
+                ", CarBrand='" + carBrand + '\'' +
+                ", CarType='" + carType + '\'' +
+                ",\n Driver=" + driver +
+                ",\n Engine=" + engine +
                 '}';
     }
 }

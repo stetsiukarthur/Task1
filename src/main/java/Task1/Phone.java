@@ -1,23 +1,23 @@
 package Task1;
 
 public abstract class Phone  {
-    private String Name, Model, MemoryCapacity;
+    private String name, model, memoryCapacity;
 
     public Phone(){}
 
-    public Phone(String Name,String Model, String MemoryCapacity){
-        this.Name = Name;
-        this.Model = Model;
-        this.MemoryCapacity = MemoryCapacity;
+    public Phone(String name,String model, String memoryCapacity){
+        this.name = name;
+        this.model = model;
+        this.memoryCapacity = memoryCapacity;
 
     }
-    public  String getName(){return Name;}
-    public void setName(String Name ){this.Name = Name;}
+    public  String getName(){return name;}
+    public void setName(String Name ){this.name = Name;}
 
-    public  String getModel(){return Model;}
-    public  void setModel(String Model){this.Model = Model;}
+    public  String getModel(){return model;}
+    public  void setModel(String Model){this.model = Model;}
 
-    public String getMemoryCapacity(){return MemoryCapacity;}
-    public void setMemoryCapacity(String MemoryCapacity){this.MemoryCapacity = MemoryCapacity;}
+    public String getMemoryCapacity(){return memoryCapacity;}
+    public void setMemoryCapacity(String MemoryCapacity){this.memoryCapacity = MemoryCapacity;}
 
 }

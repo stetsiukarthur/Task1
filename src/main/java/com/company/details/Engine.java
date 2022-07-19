@@ -1,21 +1,21 @@
 package com.company.details;
 
 public class Engine {
-    public String Producer;
-    public int Power;
+    public String producer;
+    public int power;
 
     public  Engine (){}
 
-    public  Engine( String Producer, int Power){
-       this.Producer = Producer;
-       this.Power = Power;
+    public  Engine( String producer, int power){
+       this.producer = producer;
+       this.power = power;
     }
 
     @Override
     public String toString() {
         return "Engine{" +
-                "Producer='" + Producer + '\'' +
-                ", Power=" + Power +
+                "Producer='" + producer + '\'' +
+                ", Power=" + power +
                 '}';
     }
 }

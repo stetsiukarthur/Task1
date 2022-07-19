@@ -1,7 +1,7 @@
 package Task1;
 
 public interface PhoneConnection {
-    public  void Call();
-    public  void SendMassage();
+    public  void call();
+    public  void sendMassage();
 
 }

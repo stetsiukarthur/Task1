@@ -1,15 +1,15 @@
 package com.company.entities;
 
 public class Person {
-    public String Sex , FullName;
-    public int Age, PhoneNumber;
+    public String sex, fullName;
+    public int age, phoneNumber;
     public Person(){}
 
-    public Person(String Sex,String FullName, int Age, int PhoneNumber){
-        this.Age = Age;
-        this.Sex = Sex;
-        this.FullName = FullName;
-        this.PhoneNumber =  PhoneNumber;
+    public Person(String sex,String fullName, int age, int phoneNumber){
+        this.age = age;
+        this.sex = sex;
+        this.fullName = fullName;
+        this.phoneNumber =  phoneNumber;
 
     }
 }
