@@ -3,7 +3,8 @@ package com.company.professions;
 import com.company.entities.Person;
 
 public class Driver extends Person {
-    public String drivingExperience;
+    private String drivingExperience;
+
 
     public Driver (){}
 
@@ -15,10 +16,17 @@ public class Driver extends Person {
     @Override
     public String toString() {
         return "Driver{" +
-                "Sex='" + sex + '\'' +
-                ", FullName='" + fullName + '\'' +
-                ", Age=" + age +
-                ", PhoneNumber=" + phoneNumber +
+                "Sex='" + getSex()  + '\'' +
+                ", FullName='" + getFullName() + '\'' +
+                ", Age=" + getAge()  +
+                ", PhoneNumber=" + getPhoneNumber()  +
+                ", DrivingExperience=" + drivingExperience +
                 '}';
+    }
+    public void setDrivingExperience(String drivingExperience){
+        this.drivingExperience = drivingExperience;
+    }
+    public String getDrivingExperience() {
+        return drivingExperience;
     }
 }

@@ -5,7 +5,8 @@ import com.company.professions.Driver;
 
 public class SportCar extends Car {
 
-    public String maxSpead;
+    private String maxSpead;
+
 
     public SportCar(){}
 
@@ -18,12 +19,18 @@ public class SportCar extends Car {
     public String toString() {
         return "SportCar{" +
                 "maxSpead='" + maxSpead + '\'' +
-                ", Weight=" + weight +
-                ", CarBrand='" + carBrand + '\'' +
-                ", CarType='" + carType + '\''+
-                ",\n Driver=" + driver +
-                ",\n Engine=" + engine +
+                ", Weight=" + getWeight() +
+                ", CarBrand='" + getCarBrand() + '\'' +
+                ", CarType='" + getCarType() + '\''+
+                ",\n Driver=" + getDriver() +
+                ",\n Engine=" + getEngine() +
                 '}';
+    }
+    public void setMaxSpead(String maxSpead){
+        this.maxSpead = maxSpead;
+    }
+    public String getMaxSpead() {
+        return maxSpead;
     }
 }
 

@@ -5,10 +5,11 @@ import com.company.details.Engine;
 
     public class Car {
 
-        public int weight;
-        public String carBrand, carType;
-        public Driver driver;
-        public Engine engine;
+        private int weight;
+        private String carBrand, carType;
+        private Driver driver;
+        private Engine engine;
+
 
         public Car(){}
         public Car(String carBrand, String carType, int weight, Driver driver, Engine engine){
@@ -50,6 +51,40 @@ import com.company.details.Engine;
                     ",\n Driver=" + driver +
                     ",\n Engine=" + engine +
                     '}';
+        }
+
+        public void setWeight(int weight){
+            this.weight = weight;
+        }
+
+        public int getWeight() {
+            return weight;
+        }
+        public void setCarBrand(String carBrand){
+            this.carBrand = carBrand;
+        }
+
+        public String getCarBrand() {
+            return carBrand;
+        }
+        public void setCarType(String carType){
+            this.carType = carType;
+        }
+
+        public String getCarType() {
+            return carType;
+        }
+        public void setDriver(Driver driver){
+            this.driver = driver;
+        }
+        public Driver getDriver() {
+            return driver;
+        }
+        public void setEngine(Engine engine){
+            this.engine = engine;
+        }
+        public Engine getEngine() {
+            return engine;
         }
     }
 

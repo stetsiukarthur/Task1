@@ -5,7 +5,8 @@ import com.company.professions.Driver;
 
 public class Lorry extends Car {
 
-    public String maxWeight;
+    private String maxWeight;
+
 
     public Lorry(){}
     public Lorry( String CarBrand, String CarType, int Weight, Driver Driver, Engine Engine, String maxWeight){
@@ -18,12 +19,18 @@ public class Lorry extends Car {
     public String toString() {
         return "Lorry{" +
                 "maxWeight=" + maxWeight +
-                ", Weight=" + weight +
-                ", CarBrand='" + carBrand + '\'' +
-                ", CarType='" + carType + '\'' +
-                ",\n Driver=" + driver +
-                ",\n Engine=" + engine +
+                ", Weight=" + getWeight() +
+                ", CarBrand='" + getCarBrand() + '\'' +
+                ", CarType='" + getCarType() + '\'' +
+                ",\n Driver=" + getDriver() +
+                ",\n Engine=" + getEngine() +
                 '}';
+    }
+    public void setMaxWeight(String maxWeight){
+        this.maxWeight = maxWeight;
+    }
+    public String getMaxWeight() {
+        return maxWeight;
     }
 }
 

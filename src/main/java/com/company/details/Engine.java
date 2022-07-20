@@ -1,8 +1,9 @@
 package com.company.details;
 
 public class Engine {
-    public String producer;
-    public int power;
+    private String producer;
+    private int power;
+
 
     public  Engine (){}
 
@@ -17,5 +18,18 @@ public class Engine {
                 "Producer='" + producer + '\'' +
                 ", Power=" + power +
                 '}';
+    }
+    public void setProducer(String producer){
+        this.producer = producer;
+    }
+
+    public String getProducer() {
+        return producer;
+    }
+    public void setPower(int power){
+        this.power = power;
+    }
+    public int getPower() {
+        return power;
     }
 }
